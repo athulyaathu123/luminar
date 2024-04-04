@@ -1,0 +1,20 @@
+#rozen set
+
+vowels = {"a","e","i","o","u"}
+fset =frozenset(vowels)
+print("The frozen set is : ",fset)
+print("The empty frozen set is:", frozenset())
+
+
+#user imput method
+
+age = int(input("Enter the age : "))
+no = float(input("Enter float number : "))
+s = input("enter the value : ")
+print(age)
+print(no)
+print(s)
+
+print(type(age))
+print(type(no))
+print(type(s))

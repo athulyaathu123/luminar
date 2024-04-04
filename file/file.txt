@@ -1,0 +1,56 @@
+print("-----file handling------")
+
+f = open("demo.txt","w+")
+# w = open("hello.txt","x")
+
+print("-----how to write in a file-----")
+
+
+for i in range(10):
+    f.write("this is line %d \r\n"%(i+1))
+f.close()
+
+print("-----append method------")
+
+f = open("demo.txt","a+")
+for i in range(2):
+    f.write("appended line is %d\r\n" %(i+1))
+f.close()
+
+print("-----reading mode-------")
+
+f = open("demo.txt","r")
+print(f.mode)
+if f.mode == 'r':
+    print(f.mode)
+contents = f.read()
+print(contents)
+f.close()
+
+print("-----pass data to another file-----")
+
+f1 = open("demo.txt","r")
+contents = f1.read()
+f2 = open("hello.txt","w")
+f2.write(contents)
+f1.close()
+f2.close()
+
+print("-----reading the data according to index position-------")
+
+f = open("demo.txt","r")
+print(f.read(19))
+print("--------------")
+cont = f.read()
+print(cont)
+print("--------return current position to file pointer------------")
+print(f.tell())
+
+print("--------change the location of the file pointer-------------")
+print(f.seek(0))
+
+print("-----------read a particular line-----------")
+
+f = open("demo.txt","r")
+print(f.readline())
+

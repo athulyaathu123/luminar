@@ -1,0 +1,74 @@
+#set creation
+
+a ={'a','c','b'}
+print(a)
+print(type(a))
+
+a = set(["a","c","b"])
+print(type(a))
+print(a)
+
+set1 = {1,2,4,5}
+set1.add('athulya')
+print(set1)
+
+#union method
+
+set1 = {1,2,3,4}
+set2 = {4,5,6}
+set3 ={7,8,9}
+print(set.union(set1,set2,set3)) #first syntax
+print(set1.union(set2,set3)) #second syntax
+
+#set difference
+
+set1 = {1,2,3,4}
+set2 = {4,5,6}
+set3 ={7,8,9}
+print(set.difference(set1,set2,set3))
+print(set1.difference(set2,set3))
+
+#intersection
+
+set1 = {1,2,3,4}
+set2 = {4,5,6}
+set3 ={4,7,8,9}
+print(set.intersection(set1,set2,set3))
+
+#isdisjoint
+
+set1 = {1,2,3,4}
+set2 = {4,5,6}
+set3 ={7,8,9}
+print(set1.isdisjoint(set3))
+
+set1 = {1,2,3,4}
+set2 = {4,5,6}
+set3 ={4,7,8,9}
+print(set1.isdisjoint(set3))
+
+#pop method
+
+set1 = {1,2,3,4}
+print(set1)
+set1.pop()
+print(set1)
+
+#remove method
+
+set1 = {1,2,3,4}
+set1.remove(3)
+print(set1)
+
+#clear method
+
+set1 = {1,2,3,4}
+set1.clear()
+print(set1)
+
+
+
+
+
+
+

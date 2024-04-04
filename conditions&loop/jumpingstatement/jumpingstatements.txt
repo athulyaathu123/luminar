@@ -1,0 +1,57 @@
+ #jumping statement
+
+list1 =[0,1,2,3,4,5,6,7,8]
+for i in list1:
+     print(i)
+     if i==4:
+         break    #break statement after print
+
+print("Next prg")
+list1 =[0,1,2,3,4,5,6,7,8]
+for i in list1:
+     if i==4:
+         break
+     print(i)
+
+
+print("next")
+
+list1 =[0,1,2,3,4,5,6,7,8]
+for i in list1:
+     print(i)
+     break
+
+
+# list1 =[0,1,2,3,4,5,6,7,8]
+# i=4
+# if i==4:
+#     break
+
+
+
+#continue statement
+print("=====")
+li = [1,2,3,4,"anu","anandhu"]
+for i in li:
+
+    if i == 4:
+        continue
+    print(i)
+
+print("=====")
+li = [1,2,3,4,"anu","anandhu"]
+for i in li:
+    if type(i) == str:
+        continue
+    print(i)
+
+#pass statement
+print("-----")
+li = [1,2,3,4,5,6]
+for i in li:
+    if i == 4:
+        pass
+    print(i)
+
+
+

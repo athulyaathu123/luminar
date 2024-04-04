@@ -1,0 +1,96 @@
+def fun(x):
+    return x * 2
+print(fun(3))
+
+print("-------lambda function------")
+
+print((lambda x : x*2)(3))
+
+x = lambda x : x+10
+print(x(3))
+
+
+print("-----reverse of string and to upper------")
+
+str = input("Enter the string : ")
+rev_upper = lambda string : string.upper()[:: -1] #[:: -1] another method for reversing a string
+
+
+print(rev_upper(str))
+
+
+print("------zip function------")
+
+
+a =[1,2,3,4,5]
+b =[3,4,5]
+x = zip(a,b)
+print(tuple(x))
+
+c =[3,4,5]
+print(tuple(zip(a,b,c)))
+
+print("-----zip to list,tuple,dictionary----")
+
+a =[1,2,3,4,5]
+b =[3,4,5,6,7]
+c = [4,5,6,3,2]
+print(list(zip(a,b,c)))
+print(set(zip(a,b,c)))
+print(dict(zip(a,b)))
+
+
+print("-----map function-------")
+
+list1 = [2,4,6,8]
+print(list(map(lambda x: pow(x,2),list1)))
+
+list2 =["athulya",'a','b','c']
+h =map(lambda x : x == "athulya",list2)
+print(list(h))
+
+
+print("----map function length-----")
+
+def myfunction(a):
+    return len(a)
+print(myfunction(("anu","anandhu","athulya")))
+
+print("-----individual length------")
+
+def myfunction(a):
+    return len(a)
+c = map(myfunction,('apple','banana','kiwi'))
+print(list(c))  #converting to list for readability
+
+print("-----map function concatination------")
+
+def myfunc(a,b):
+    return a + b
+c = map(myfunc,('apple','kiwi','mango'),('orange','papaya','chikku'))
+print(set(c))
+
+print("-----filter function------")
+
+list1 = [1,2,3,4,5,6,7,8,9,10]
+print(list(filter(lambda x : x%2==0,list1)))
+
+print("----only a-----")
+
+list1 = ['a','s','r','d','a']
+print(list(filter(lambda x : x == 'a',list1)))
+
+
+print("------reduce function-------")
+
+from functools import reduce
+list= [1,3,5,6,2]
+print("the sum of list : ",end="")
+print(reduce(lambda a,b : a+b,list))
+
+print("the maximum element of the list : ",end ="")
+print(reduce(lambda a,b: a if a>b else b,list))
+
+
+
+

@@ -1,0 +1,36 @@
+#tuple  creation
+
+t1 = (1,2,3)
+print(t1)
+print(type(t1))
+
+t2 = tuple([1,2,3,4,5])
+print(t2)
+print(type(t2))
+
+#count method
+
+t1 = (1,2,4,2,5,2)
+print(t1.count(2))
+
+#length method
+
+t1 = (1,2,4,2,5,2)
+print(len(t1))
+
+#index function
+
+t1 = (1,2,4,2,5,2)
+print(t1.index(2))
+
+#sum,min,max,slicing
+
+t1 = (1,2,4,2,5,2)
+print(sum(t1))
+print(max(t1))
+print(min(t1))
+a = t1[1:5]
+print(a)
+
+
+

@@ -1,0 +1,129 @@
+#empty function
+# print("----emoty function----")
+#
+# def course():
+#     pass
+# print(course())
+#
+# print("----function with content----")
+#
+# def mycourse():
+#     print("I am studying python")
+#     print("I am Athulya")
+# mycourse()
+#
+# print("----to variable----")
+#
+# v1 = mycourse()
+# # print(v1)
+#
+#
+# print("----function without argument and return value----")
+#
+# def add():
+#     num1 =int(input("Enter first number : "))
+#     num2 =int(input("Enter second number : "))
+#
+#     sum = num1+ num2
+#     print(sum)
+# add()
+#
+# print("----multiplication----")
+#
+# def multi():
+#     num1 =int(input("Enter first number : "))
+#     num2 =int(input("Enter second number : "))
+#
+#     multi = num1 * num2
+#     print(multi)
+# multi()
+#
+#
+# print("----functions with argument and no return type-----")
+#
+# def add(a,b):  #one method without entering the use input value
+#     sum = a +b
+#     print(sum)
+# add(3,2)
+#
+# def add(a,b):   #another method for with argument and no return value
+#     num1 = int(input("Enter first number : "))
+#     num2 = int(input("Enter second number : "))
+#     sum = num1+num2
+#     print(sum)
+# add(3,2)
+
+# print("---function with argument and return value----")
+#
+# def add(x,y):
+#     x = int(input("Enter first number : "))
+#     y = int(input("Enter second number : "))
+#     sum = x + y
+#     sub = x - y
+#     print("sum = ",sum)
+#     print("sub = ",sub)
+#     return sum
+# d = add(3,2)
+#
+# print(d)
+
+
+# print("----default and non default argument----")
+#
+# def add(num1,num2,num3):
+#     return num1+num2+num3
+# print(add(2,3,4))
+#
+# def add(num1,num2,num3=2):
+#     return num1+num2+num3
+# print(add(2,3))
+#
+# print("---*nums----")
+#
+# def add(*nums):
+#     return sum(nums)
+# print(add(2,4,6,3,1))
+#
+# print("----**nums------")
+#
+# def add(**nums):
+#     return nums
+# x = add(athulya=23,anandhu = 25)
+# print(x)
+
+print("-----cube--------")
+
+
+def cube():
+    a = int(input("enter a number : "))
+    cvalue = a*a*a
+    return cvalue
+print(cube())
+
+
+print("-----enter the number-----")
+def even():
+    num = int(input("enter the number : "))
+    if num % 2 == 0:
+        print(num, "is even")
+    else:
+        print(num,"is odd")
+(even())
+
+print("-------removing vowels from the string-------")
+
+
+def vowels():
+    name = input("Enter the string : ")
+    v =['a','A','e','E','i','I','o','O','u','U']
+    for i in name:
+        if i in v:
+
+            name = name.replace(i,"")
+    print("String after removing vowels are : ",name)
+vowels()
+
+
+
+
+

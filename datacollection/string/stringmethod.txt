@@ -1,0 +1,191 @@
+#creation of strings
+
+sd = "hello how are you"
+print(sd[0])
+print(sd[1:7])
+
+#string concatination
+print("------string concatination---------")
+print("programming" + "language")
+
+#string multiplication
+print("-----------string multiplication-------------")
+a = "i"
+b = "j"
+print(a*8)
+print((b*4))
+
+#string startswith
+
+print("-------startswith---------------")
+
+a = ("python is is kiddu language")
+print(a.startswith("p"))
+print(a.startswith("py"))
+print(a.startswith("kiddu",13,18))
+print(a.startswith("kiddu",13,16))
+
+
+print("----------endswith-----------")
+
+a = ("python is is kiddu language")
+print(a.endswith("age"))
+
+a = ("python is is kiddu language")
+print(a.endswith("Age"))
+
+a = ("python is is kiddu language")
+print(a.endswith("on",1,6))
+
+a = ("python is is kiddu language")
+print(a.endswith("on",5,6))
+
+a = ("python is is kiddu language")
+print(len(a))
+
+print("-------count of substring----------")
+
+a =("hi,how are you,hi")
+print(a.count("h"))
+
+a =("hi,how are you,hi")
+print(a.count("hi"))
+
+print("----------substring occurence in string-----------")
+
+a = ("python is and a programming language")
+print(a.find("is"))
+
+a = ("python is and a programming language")
+print(a.find("is a"))
+
+a = ("python is and a programming language")
+print(a.find("in a"))
+
+a = ("python is and a programming language")
+print(a.find("is",0,12))
+
+a = ("python is and a programming language")
+print(a.find("is",9,11))
+
+a = ("python is and a programming language")
+print(a.find("is",9,12))
+
+print("-------------last occurence in a string-------------")
+
+a =("python is is a programming language")
+print(a.rfind("is"))
+
+a =("python is is a programming language")
+print(a.rfind("in a"))
+
+a =("python is is a programming language")
+print(a.rfind("is",7))
+
+a =("python is is a programming language")
+print(a.rfind("is",7,10))
+
+a =("python is is a programming language")
+print(a.rfind("is",7,10))
+
+a =("python is is a programming language")
+print(a.rfind("is",7,12))
+
+
+print("----------split function-----------")
+
+string = "python is a programming language"
+print(string.split(' '))
+
+
+a =("python is a programming language")
+print(string.split('i'))
+
+
+print("-----------join method-------------")
+
+string=("python", "is", "programming" ,"anguage")
+print(' '.join(string))
+
+print("---------capitalize----------")
+str1 =("i am title")
+print(str1.capitalize())
+
+print("----------title method-----------")
+
+str1 =("i am title")
+print(str1.title())
+
+print("---------is title---------")
+
+str1 =("i am title")
+print(str1.istitle())
+
+print("--------isalnum method-------")
+
+str1 =("i am title")
+print(str1.isalnum())
+
+str1 = ('123')
+print(str1.isalnum())
+
+
+print("------------isalpha method-------")
+str1 =("hello")
+print(str1.isalpha())
+
+str1 =("i am title")
+print(str1.isalpha())
+
+
+print("-----------isdigit method--------")
+
+str1 =("i am title")
+print(str1.isdigit())
+
+str1 =("1234")
+print(str1.isdigit())
+
+print("---------islower----------")
+
+str1 =("i am title")
+print(str1.islower())
+
+str1 =("i am Title")
+print(str1.islower())
+
+print("-------uppercase method------------")
+
+str1 =("i am title")
+print(str1.upper())
+
+print("---------isupper method--------")
+str1 =("i am title")
+print(str1.isupper())
+
+str1 =("TITLE")
+print(str1.isupper())
+
+print("--------islower--------")
+str1 =("i am title")
+print(str1.islower())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

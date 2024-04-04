@@ -1,0 +1,31 @@
+#nested if
+
+age = int(input("Enter the age : "))
+health= input("enter the condition : ")
+if age >=60:
+    if health == 'critical':
+        print("could not provide vaccination for elders")
+    elif health == 'not_ok':
+        print("could provide vaccination for elders after taking test")
+    else:
+        print("can provide vaccination for elders")
+elif age<=18:
+    if health == 'critical':
+        print("could not provide vaccination for children having issues")
+    elif health == 'not_ok':
+        print("could provide vaccination for children after taking test")
+    else:
+        print("can provide vaccination for children")
+else:
+    if health == 'critical':
+        print("could not provide vaccine who have health issues")
+    elif health == 'not_ok':
+        print("could provide vaccine after taking test")
+    else:
+        print("could provide vaccination for this time")
+
+
+
+
+
+
