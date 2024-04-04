@@ -1,0 +1,37 @@
+print("----calender module----")
+
+import calendar as calendar
+print(calendar.firstweekday())
+
+print("----leap year----")
+year = 2016
+print(calendar.isleap(year))
+
+year = 2017
+print(calendar.isleap(year))
+
+print("----week day---")
+
+print(calendar.weekday(2023,3,10)) #week day starts with 0
+
+print("----calendar-----")
+
+year = int(input("Enter the year : "))
+month = int(input("Enter the month : "))
+print(calendar.month(year,month))
+
+print("----calender for whole year-----")
+
+import calendar
+print("the calender of year 2023 is")
+print(calendar.calendar(2023))
+
+print("------calender with space-------")
+
+print(calendar.calendar(2023,2,1,9))
+
+print("-----set first week day as sunday-----")
+
+calendar.setfirstweekday(6)
+print(calendar.month(2023,3))
+

@@ -1,0 +1,99 @@
+class Employee(Person):
+    def __init__(self,n,v,s,d):
+        super().__init__(n,v)
+        self.salary = s
+        self.design = d
+
+    def display(self):
+        print(self.name)
+        print("salary is : ",self.salary)
+        print("Designation is : ",self.design)
+
+
+emp = Employee('adam','eng',10000,'manager')
+emp.display()
+print(emp.name)
+
+print("------protected method---------")
+class Person:
+    def __init__(self,n,v):
+        self._name = n
+        self._vid = v
+
+    def display(self):
+        print("name : ",self._name)
+        print("voter id : ",self._vid)
+
+
+class Employee(Person):
+    def __init__(self,n,v,s,d):
+        super().__init__(n,v)
+        self.salary = s
+        self.design = d
+
+    def display(self):
+        print(self._name)
+        print("salary is : ",self.salary)
+        print("Designation is : ",self.design)
+
+
+emp = Employee('adam','eng',10000,'manager')
+emp.display()
+print(emp._name)
+
+
+# class Person:
+#     def __init__(self,n,v):
+#         self.__name = n
+#         self.__vid = v
+#
+#     def display(self):
+#         print("name : ",self.__name)
+#         print("voter id : ",self.__vid)
+#
+#
+# class Employee(Person):
+#     def __init__(self,n,v,s,d):
+#         super().__init__(n,v)
+#         self.salary = s
+#         self.design = d
+#
+#     def display(self):
+#         print(self.__name)
+#         print("salary is : ",self.salary)
+#         print("Designation is : ",self.design)
+#
+#
+# emp = Employee('adam','eng',10000,'manager')
+# emp.display()
+# print(emp.__name)
+print("------encapsulation-------")
+class Encapsulation:
+    def __init__(self,a,b,c):
+        self.public = a
+        self._protected = c
+        self.__private = b
+
+x = Encapsulation(11,15,17)
+print(x.public)
+print(x._protected)
+# print(x.__private)
+
+print("------private method access------")
+
+class Encapsulation:
+    def __init__(self,a,b,c):
+        self.public = a
+        self._protected = c
+        self.__private = b
+
+    def hello(self):
+        print(self.__private)
+
+x = Encapsulation(11,15,17)
+x.hello()
+
+
+
+
+

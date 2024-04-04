@@ -1,0 +1,19 @@
+print("------abstraction-------")
+
+from abc import ABC,abstractmethod
+
+class Mail(ABC):
+    def mileage(self):
+        pass
+
+    def fun(self):
+        print("fun")
+
+class Child(Mail):
+    def sum(self):
+        print("sum")
+    def mileage(self):
+        print("mileage")
+
+obj = Child()
+obj.mileage()

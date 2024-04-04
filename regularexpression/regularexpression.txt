@@ -1,0 +1,97 @@
+print("----match function-----")
+
+import re
+line = "python is fun"
+m = re.match('is',line)
+print(m)
+
+import re
+line = "python is fun"
+m = re.match('is',line)
+if m:
+    print("match found")
+else:
+    print("no match")
+
+
+import re
+line = "python is fun"
+m = re.match('python',line)
+if m:
+    print("match found")
+else:
+    print("no match")
+
+
+print("----search method-----")
+
+x = re.search('is',line)
+print(x)
+
+
+import re
+line = "python is fun"
+m = re.search('ok',line)
+if m:
+    print("match found")
+else:
+    print("no match")
+
+
+print("------substitute method------")
+
+helo = '1234-5678-2468'
+result = re.sub(r'\d','h',helo)
+print(result)
+print("-----------------------")
+
+helo = '1234-5678-2468 hello athulya,how are you'
+result = re.sub(r'athulya','anagha',helo)
+print(result)
+
+
+print("-----------------------")
+
+helo = '1234-5678-2468'
+result = re.sub(r'\D','malu',helo)
+print(result)
+
+print("----find method------")
+
+import re
+line = "we 23 fis 20232 kjid 160200"
+print(re.findall('\d+',line))
+
+import re
+line = "we 23 fis 20232 kjid 160200"
+print(re.findall('\d',line))
+
+import re
+line = "we 23 fis 20232 kjid 160200"
+print(re.findall('[0-9]',line))
+
+import re
+line = "we 23 fis 20232 kjid 160200"
+print(re.findall('[0-9]+',line))
+
+print("-----getting phone number from list-------")
+
+import re
+data = "athulya how is your dad 123455556 +9500404905 has +69586094995"
+print(re.findall('[+]\d+',data))
+
+print("-------starting with d and ending with d-------")
+print(re.findall('[d]\w+[i]\w+[d]',data))
+
+print("------starting with a------")
+print(re.findall('[a]\w+',data))
+
+print("-----digit with 4-------")
+print(re.findall('[0-9]{4}',data))
+
+data = ["hai your eamil id and your friends email id are athuathulya@gmail.com and anagha@gmail.com"]
+print(re.findall('[\D]\w+[@]\w+[.]',data))
+
+
+
+

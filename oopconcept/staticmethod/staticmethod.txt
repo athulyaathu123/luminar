@@ -1,0 +1,23 @@
+print("--------static variable/static function-------")
+
+class Student:
+    studentcount = 0 #class variable
+    def __init__(self,r,n):
+        self.rollno = r
+        self.name = n
+        Student.studentcount += 1
+
+    def displaycount():  #static function
+        print("total strength of class ",Student.studentcount)
+
+    def display(self):
+        print("roll no : ",self.rollno)
+        print("name : ",self.name)
+
+s1 = Student(4,"athulya")
+s2 = Student(6,"anandhu")
+s3 = Student(5,"anagha")
+ #display()
+
+print(s2.studentcount)
+

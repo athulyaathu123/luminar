@@ -1,0 +1,197 @@
+class Cat:
+    def __init__(self,v1,v2):
+        self.v1 = v1
+        self.v2 = v2
+
+    def eat(self,v1):
+        self.v1 = v1
+        print("milk")
+
+    def eat(self,v2):
+        self.v2 = v2
+        print("v1 is %s and v2 is %d"%(self.v1,self.v2))
+
+obj = Cat("Athulya",23)
+obj.eat(9)
+
+
+print("---------- function over loading in polymorphism---------")
+
+class new:
+    def hello(self,a,b):
+        self.a = a
+        self.b = b
+
+    def hello(self,a = None,b = None,c = None):
+        self.a = a
+        self.b = b
+        self.c = c
+
+        x = 0
+        if a != None and b != None and c != None:
+            x = a + b + c
+        elif a != None and b!= None:
+            x = a + b
+        else:
+            x = a
+        print(x)
+
+
+obj = new()
+obj.hello(2,3)
+
+print("-----operator overloading-------")
+
+class Point:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+    def __add__(self,other):
+        x = self.x + other.x
+        y = self.y + other.y
+
+        return Point(x,y)
+
+    def __str__(self):
+        return "({0}.{1})".format(self.x,self.y)
+
+p1 = Point(5,7)
+p2 = Point(4,6)
+
+
+
+print("---------over riding--------")
+
+class Parent:
+    def mymethod(self):
+        print("calling parent method")
+
+class Child(Parent):
+    def myethod(self):
+        print("calling child method")
+
+c = Child()
+c.mymethod()
+
+
+print("-----super class-------")
+
+class Firstclass():
+    def __init__(self,v1,v2):
+        print("I am in first class")
+        self.v1 = v1
+        self.v2 = v2
+    def printvalue(self):
+        print("values are ",self.v1,'and',self.v2)
+
+class Secondclass(Firstclass):
+    def __init__(self,v1,v2,v3):
+        self.v3 = v3
+        super().__init__(v1,v2)
+    def printvalue(self):
+        print("I am in second class")
+    def printvalue(self):
+        print("I am in second class printvalue")
+
+object = Secondclass(7,2,3)
+object.printvalue()
+
+print("-------super function 2--------")
+
+class Shape():
+    def area(self):
+        print("area is ",0)
+
+class Square(Shape):
+    def __init__(self,length):
+        super().area()
+        self.length = length
+
+    def area(self):
+        print("area of the shape is : %d " %(self.length**2))
+
+obj1 = Square(2)
+obj1.area()age = 90  #int
+print(age) #data type print cheyyan
+print(type(age))
+
+
+age = 90.6 #float
+print(age) #data type print cheyyan
+print(type(age))
+print("bool")
+age = True #boolean
+print(age) #data type print cheyyan
+print(type(age))
+print(True+True+False)
+
+a=6
+b=7
+print(a==b)
+print(type(a)== type(b))
+
+st = None
+print(type(st))
+
+
+#complex
+
+x= 40 + 40j
+print(type(x))
+print(x.real) #print real part
+print(x.imag)  #print imag part
+
+
+import keyword  #list of keywords
+print(keyword.kwlist)
+
+#integer to float
+
+a = 10
+print(type(a))
+
+z=float(a)  #storing int value to float
+print(type(z))
+
+b = 4.5  #float to int conversion
+print(type(b))
+c =int(b)
+print(type(c))
+
+b = 4.5  #float to string conversion
+print(type(b))
+c =str(b)
+print(type(c))
+
+a = 10
+print(type(a))
+
+z=str(a)  #int  to string
+print(type(z))
+
+a='23.4' #string to float only numbers  can be insert not charecters
+print(type(a))
+x = float(a)
+print(type(x))
+
+a='2.3'   #string to int
+print(type(a))
+y = int(float(a))
+print(type(y))
+
+#integer  ro complex
+
+a =4
+print(type(a))
+y = complex(a,a*2)
+print(type(y))
+print(y)
+
+#float to complex
+
+a = 3.6
+print(type(a))
+y=complex(a,a*2)
+print(type(y))
+print(y)

@@ -1,0 +1,16 @@
+class Student:
+    def __init__(self,name,age,qualification):
+        self.name=name
+        self.age=age
+        self.qualification=qualification
+
+    def display(self):
+        print("hi %s, who is %s years old and completed %s" %(self.name,self.age,self.qualification))
+
+obj1=Student("ajith",20,"BCA")
+obj2=Student("sujith",20,"MCA")
+obj3=Student("vinu",20,"BBA")
+
+obj1.display()
+obj2.display()
+obj3.display()

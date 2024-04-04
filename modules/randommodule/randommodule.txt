@@ -1,0 +1,33 @@
+print("----random module-----")
+
+import random
+x = random.randrange(111,999) #111 included 999 not included
+print(x)
+
+print("----randint------")
+x = random.randint(11,13) #includes both the values
+print(x)
+
+print("-----choice method----")
+
+list = (1,'rr','ss',8)
+y = random.choice(list)
+print(y)
+
+print("----shuffle----")
+
+list = [1,'rr','ss',8]
+random.shuffle(list)
+print(list)
+
+print("-----sample-----")
+list =[1,'ss','rr',8,9,90]
+print(random.sample(list,3))
+
+print("-----random.random-------")
+x = random.random()
+print(x)
+
+
+
+

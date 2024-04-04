@@ -1,0 +1,30 @@
+#overloading = same name
+
+from multipledispatch import dispatch
+@dispatch(int,int)
+def add(a,b):
+    print(a+b)
+
+@dispatch(float,float)
+def add(a,b):
+    print(a-b)
+
+add(10,20)
+add(10.0,20.0)
+
+
+
+#overriding
+
+class Main:
+    section="new"
+    def __init__(self,n):
+        self.name=n
+ob=Main("ajith")
+
+class Sub(Main):
+    def __init__(self):
+        pass
+    age=20
+
+sb=Sub()

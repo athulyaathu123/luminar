@@ -1,0 +1,45 @@
+#positional arguments or parameter
+#asterisk operator(*)
+#arbitary arguments
+#keyword argument
+# arbitary keyword argument
+
+print("positional argument")
+
+def fname(a,b):
+    print(a)
+    print(b)
+
+fname(a=10,b=20)
+
+print("keyword argument")
+
+def fname(a,b):
+    print(a)
+    print(b)
+
+fname(b=10,a=20)
+
+print("asterisk/arbitary argument")
+
+def fname(a,*b):
+    print(a)
+    print(b)
+
+fname(10,20,30)
+
+print("arbitary keyword argument")
+
+def fname(a,**b):
+    print(a)
+    print(b)
+
+fname(a=10,b=20,c=30)
+
+print("default argument")
+
+def fname(a,b=3):
+    print(a)
+    print(b)
+
+fname(a=10)

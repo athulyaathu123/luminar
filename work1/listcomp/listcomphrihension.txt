@@ -1,0 +1,49 @@
+list1 = [x for x in range(10)]
+print(list1)
+
+print("-----negtive range-----")
+
+list1 = [x for x in range(-10,10) if x<0]
+print(list1)
+
+print("----even numbers----")
+
+list1 = [x for x in range(1,21)if x % 2 == 0]
+print(list1)
+
+print("----uppercase and remove words with a------")
+
+fruits = ["apple","banana","cherry","kiwi","mango"]
+newist =[]
+for i in fruits:
+    if 'a' in i:
+        newist.append(i.upper())
+print(newist)
+
+print("------list comprehension remove a------")
+
+fruits = ["apple","banana","cherry","kiwi","mango"]
+newlist =[x for x in fruits if 'a' in x]
+print(newlist)
+
+print("--------list comprehension to uppercase------")
+
+fruits = ["apple","banana","cherry","kiwi","mango"]
+newlist =[x.upper() for x in fruits if 'a' in x ]
+print(newlist)
+
+
+
+fruits = ["apple","banana","cherry","kiwi","mango"]
+newlist =[x.upper() for x in fruits if 'a' not in x ]
+print(newlist)
+
+
+fruits = ["apple","banana","cherry","kiwi","mango"]
+newlist =[x.upper() for x in fruits if x != 'apple' ]
+print(newlist)
+
+
+
+
+

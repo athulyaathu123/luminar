@@ -1,0 +1,24 @@
+#abc import
+#class definition
+#abc inherit
+#abstract method = a method without implimentation
+#@abstract method
+#abc = abstract base class
+#abc child,minimum 1 abstract method, abstract method decorate cheyyanm
+
+from abc import ABC,abstractmethod
+class Main(ABC):
+    def display(self):
+        print("display")
+    @abstractmethod
+    def fun(self):
+        pass
+# ob=Main()
+class Normal(Main):
+    name="normal"
+    def hello(self):
+        print("hiiii")
+    def fun(self):
+        print("fun")
+ob=Normal()
+ob.hello()

@@ -1,0 +1,44 @@
+print("----date----")
+
+from datetime import date
+today = date.today()
+print(today)
+
+print(today.year) #current year
+print(today.month) #current month
+print(today.day) #current day
+
+print("----time-----")
+
+from datetime import time
+time = time(13,24,56)
+print(time)
+
+print("Hour = ",time.hour)
+print("Minute = ",time.minute)
+print("Second = ",time.second)
+
+print("---min and max time-----")
+from datetime import time
+
+#getting min time
+mintime = time.min
+print("Min time is " ,time.min)
+
+#getting max time
+maxtime =  time.max
+print("Max time is ",time.max)
+
+print("----date and time together----")
+
+from datetime import datetime
+a = datetime(2000,2,16,5,16,9)
+print(a)
+
+print("-----max and min date----")
+
+import datetime
+mindate = date.min
+print("min date ",mindate)
+maxdate = date.max
+print("max date ",maxdate)

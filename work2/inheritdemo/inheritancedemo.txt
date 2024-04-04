@@ -1,0 +1,132 @@
+#single
+print("--------single inheritance----------")
+class Parent:
+    name="parent"
+    rel="parent of child"
+    def relation(self):
+        print("parent and child")
+
+class Child(Parent):
+    pass
+
+obj=Child()
+obj.relation()
+
+
+
+#multiple
+print("------multiple inheritance-----------")
+class Parent:
+    name="parent"
+    rel="parent of child"
+    def relation(self):
+        print("parent and child")
+class Parent2:
+    pname="parent of 2"
+    def relation2(self):
+        print("parent of two class")
+class Child(Parent,Parent2):
+    pass
+
+obj=Child()
+obj.relation()
+obj.relation2()
+
+
+#heirarchy
+
+print("------------multilevel inheritance------------")
+class Parent:
+    name="parent"
+    rel="parent of child"
+    def relation(self):
+        print("parent and child")
+class Parent2(Parent):
+    pname="parent of 2"
+    def relation2(self):
+        print("parent of two class")
+class Child(Parent2):
+    pass
+
+obj=Child()
+obj.relation()
+
+
+print("---------heirarchial inheritance---------")
+
+class Parent:
+    name="parent"
+    rel="parent of child"
+    def relation(self):
+        print("parent and child")
+class Child(Parent):
+    pname="parent of 2"
+    def relation2(self):
+        print("parent of two class")
+class Child2(Parent):
+    pass
+
+obj=Child()
+obj.relation()
+obj.relation2()
+
+
+print("--------hybrid inheritance----------")
+
+class Grandparent:
+    name="parent"
+    rel="parent of child"
+    def relation(self):
+        print("parent and child")
+class Parent(Grandparent):
+    pname="parent of 2"
+    def relation2(self):
+        print("child")
+class Parent2:
+    pname="parent of 2"
+    def relation3(self):
+        print("child2")
+
+class Child(Parent,Parent2):
+    pass
+
+
+obj=Child()
+obj.relation()
+obj.relation2()
+obj.relation3()
+
+
+
+#super method
+
+
+
+print("------multiple inheritance-----------")
+class Parent:
+    name="parent"
+    rel="parent of child"
+    def relation(self):
+        print("parent and child")
+class Parent2:
+    pname="parent of 2"
+    def relation2(self):
+        print("parent of two class")
+class Child(Parent,Parent2):
+   def mother(self):
+       print(super().name,super().pname)
+obj=Child()
+obj.relation()
+obj.mother()
+
+#there is  no specific acess specifier like public,protected,there is only one specifc access specifier and that is private
+
+
+
+
+
+
+
+
+
+

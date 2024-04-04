@@ -1,0 +1,79 @@
+print("class creation")
+
+class Athu:
+    x = 6
+    y = 4
+obj =Athu()
+print(obj.x)
+print(obj.y)
+
+print("----self method-----")
+
+class Athu:
+    x = 5
+    def name(self):
+        print("Athulya")
+obj = Athu()
+(obj.name())
+print(obj.x)
+
+print("-----multiple arguments to self------")
+
+class House:
+    def athu(self,name,color,floormaterial):
+        self.name = name
+        self.color = color
+        self.floor_material = floormaterial
+    def myhome(self):
+        print("person name is %s and paint color is %s and the floor material is %s" %(self.name,self.color,self.floor_material))
+home = House()
+home.athu("Anandhu","Black","Marble")
+home.myhome()
+
+print("-----using init mwthod----")
+
+class House:
+    def __init__(self,name,color,floormaterial):
+        self.name = name
+        self.color = color
+        self.floor_material = floormaterial
+    def myhome(self):
+        print("person name is %s and paint color is %s and the floor material is %s" %(self.name,self.color,self.floor_material))
+
+home=House("Anandhu","Black","Marble")
+home.myhome()
+
+
+print("-----using init mwthod----")
+
+class House:
+    def __init__(self,name,color,floormaterial):
+        self.name = name
+        self.color = color
+        self.floor_material = floormaterial
+    def myhome(self):
+        print("person name is %s and paint color is %s and the floor material is %s" %(self.name,self.color,self.floor_material))
+
+home=House("Anandhu","Black","Marble")
+home1 = House("Athulya","White","Tiles")
+home.myhome()
+home1.myhome()
+
+
+print("-----using init method----")
+
+class House:
+    def __init__(self):
+            self.name = input("Enter name:")
+            self.color = input("Enter color : ")
+            self.floor = input("Enter material : ")
+
+    def myhome(self):
+        print("------------DETAILS OF CUSTOMER-------------")
+        print("person name is %s and paint color is %s and the floor material is %s" %(self.name,self.color,self.floor))
+n = int(input("Enter the no : "))
+for i in range(n):
+    home=House()
+    home.myhome()
+
+

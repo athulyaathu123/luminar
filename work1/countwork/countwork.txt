@@ -1,0 +1,181 @@
+def word_count(c):
+    count = dict()
+    word = c.split()
+
+    for i in word:
+        if i in count:
+            count[i] += 1
+        else:
+            count[i] = 1
+
+    return count
+
+print( word_count('hi hello hi hello hi hi hello'))
+
+
+def find_maximum(lst):
+    # Check if the list is empty
+    if not lst:
+        return None
+
+    # Initialize the maximum value with the first element of the list
+    max_value = lst[0]
+
+    # Iterate through the list starting from the second element
+    for item in lst[1:]:
+        # Compare the current item with the maximum value
+        if item > max_value:
+            max_value = item
+
+    return max_value
+
+# Example usage:
+my_list = [12, 34, 56, 78, 90, 23, 45]
+maximum = find_maximum(my_list)
+print("The maximum value in the list is:", maximum)
+
+
+sample=[2,5,1,8,4]
+
+list_set = None
+for i in sample:
+    if list_set is None or i < list_set:
+        list_set=i
+print("smallest element is : " ,list_set)
+
+string1="athulya anoop"
+string2="anoop"
+sample1=0
+sample2=0
+for i in string1:
+    sample1 =sample1+1
+for j in string2:
+    sample2 =sample2+1
+if sample1 < sample2:
+    print("larger string is",sample2)
+elif sample1 == sample2:
+    print("both are equal")
+else:
+    print("largest string is",sample2)
+
+string1 = "athulya anoop "
+string2 = "anoop"
+count1 = 0
+count2 = 0
+
+for i in string1:
+    count1= count1+1
+for j in string2:
+    count2=count2+1
+if(count1 < count2):
+    print("largest string is ")
+    print(string2)
+elif(count1 == count2):
+    print("both are same")
+else:
+    print("largest string is")
+    print(string1)
+
+
+strin="athulya"
+count =0
+if i in strin:
+    count=count+1
+print("length of string is")
+print(count)
+
+
+string=("bindu")
+count=0
+for i in string:
+      count=count+1
+print("Length of the string is:")
+print(count)
+
+std=["athu","anu","athu"]
+new_list=list(set(std))
+print(new_list)
+# for i in std:
+#     if i not in new_list:
+#         new_list.append(i)
+# print(new_list)
+
+
+def word_count(c):
+    count = dict()
+    word = c.split()
+
+    for i in word:
+        if i in count:
+            count[i] += 1
+        else:
+            count[i] = 1
+
+    return count
+
+print( word_count('hi hello hi hello hi hi hello'))
+
+
+def w_count(c):
+    count=dict()
+    words=c.split()
+    for i in words:
+        if i in count:
+            count[i]+=1
+        else:
+            count[i] =1
+    return count
+print(w_count("hi athulya hi"))
+
+
+dict1= {1:"athu",2:"anu",3:"vinu"}
+print(type(dict1))
+
+dict1= {1:"athu",2:"anu",3:"vinu"}
+dict1[4]="malu"
+print(dict1)
+
+dict1= {1:"athu",2:"anu",3:"vinu"}
+dict1[3]="vishnu"
+print(dict1)
+
+dict1= {1:"athu",2:"anu",3:"vinu"}
+print(dict1.get(2))
+print(dict1.keys())
+print(dict1.values())
+
+tup=("anu",7,"vinu")
+print(type(tup))
+
+tup=("anu",7,"vinu","anu")
+print(len(tup))
+print(tup.count("anu"))
+print(tup.index(7))
+print(tup[0:3])
+
+l1=["athu","anu",5]
+print(type(l1))
+
+l1=["athu","anu",5]
+l1.extend(["vinod","ammu"])
+x=l1[-2]
+print(x)
+
+l1=["athu","anu","anu",5]
+l1.insert(3,"athulya")
+l1[2]="anoop"
+l1.remove("athu")
+print(l1)
+
+l1=[1,6,8,9,3,4,4]
+l1.reverse()
+print(l1)
+
+
+dict1= {1:"athu",2:"anu",3:"vinu"}
+reult=list(dict1.items())
+print(reult)
+
+
+
+

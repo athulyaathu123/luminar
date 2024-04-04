@@ -1,0 +1,7 @@
+print("----math function------")
+
+import math as m
+print(m.log(10))
+
+print(m.fsum((1,2,3,4,5)))
+print(m.fsum([1,2,3,4]))

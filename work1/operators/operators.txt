@@ -1,0 +1,209 @@
+#arthmetic operators
+print("ARTHMETIC OPERATORS")
+#addition operation
+
+a = 4
+b = 5
+c = a + b
+print(c)
+
+#subtraction operation
+
+a = 5
+b = 3
+c = a - b
+print(c)
+
+#multiplication operation
+
+a = 5
+b = 4
+c =  a * b
+print(c)
+
+
+#division operation
+
+a = 10
+b = 2
+c = a / b
+print(c)
+
+#modulus operation
+
+a = 10
+b = 3
+c = a % b
+print(c)
+
+#exponention function
+
+a = 12
+b = 5
+c = a ** b
+print(c)
+
+#floor division
+
+a = 13
+b = 2
+c = a // b
+print(c)
+
+#assignment operatoprs
+print("ASSIGNMENT OPERATORS")
+#equal operator
+
+a = 4
+print (a)
+
+#+= operator
+
+a = 4
+a += 5
+print(a)
+
+#-= operator
+
+a = 4
+a -= 2
+print(a)
+
+#*= operator
+
+a = 4
+a *= 5
+print(a)
+
+#/= operator
+
+a = 4
+a /= 2
+print(a)
+
+
+# exponential equal operator
+
+a = 4
+a **= 5
+print(a)
+
+#foor division equal
+
+a = 4
+a //= 3
+print(a)
+
+#modulus equal
+
+a = 4
+a %= 3
+print(a)
+
+
+#comparison operator
+print("COMPARISON OPERATORS")
+#equal operator
+
+x = 6
+y = 4
+print(x == y)
+
+#not equal operator
+
+x = 6
+y = 4
+print(x != y)
+
+#greater than operator
+
+x = 6
+y = 4
+print(x > y)
+
+#less than operator
+
+x = 6
+y = 4
+print(x < y)
+
+#greater than equal  operator
+
+x = 6
+y = 4
+print(x >= y)
+
+#less than equal operator
+
+x = 6
+y = 4
+print(x <= y)
+
+#logical operstors
+print("LOGICAL OPERATORS")
+#and operation
+print(False and False)
+print(False and True)
+print(True and True)
+print(True and False)
+
+#or operation
+
+print(False or False)
+print(True or False)
+
+#not operation
+
+print(not True)
+print(not False)
+
+#and operation
+
+x = 8
+print(x< 10 and x==8)
+print(x> 10 and x==8)
+print(not x< 10 and x==0)
+
+#or operation
+
+x = 8
+print(x> 10 or x==8)
+print(not x< 10 or x==0)
+
+
+#identity operators
+print("IDENTITY OPERATORS")
+#is operator
+
+a = 9
+b = 8
+print(a is b)
+
+
+#is  not operator
+
+a = 9
+b = 8
+print(a is not b)
+
+a = "Athulya"
+b = "Anoop"
+print(a is b)
+
+a = "Athulya"
+b = "Anoop"
+print(a is not b)
+
+
+#membership operators
+print("MEMBERSHIP OPERATORS")
+
+x = "hai how are you"
+print("how" in x)
+
+x = "hai how are you"
+print("how" not in x)
+
+
+
+
